@@ -1,1 +1,14 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Execute Command') {
+            steps {
+                echo 'Starting Execution...'
+                sh 'echo "Hello from Jenkins!"'
+              
+            }
+        }
+    }
+}
 
